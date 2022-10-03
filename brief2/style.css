@@ -3,6 +3,135 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header {
+    padding: 10px;
+    display: flex;
+}
+
+.logo {    
+    background-color: black;
+    color: white;
+    padding: 30px 20px ;
+    font-family:'Courier New', Courier, monospace;
+    text-decoration: none;
+    font-weight: bold;
+    width:100px;
+}
+
+header ul li{
+    padding: 10px;
+    justify-content: center;
+}
+
+header ul {
+    display: flex;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header ul {
+    width: max-content;
+    padding: inherit;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+.nav {
+    margin: 20px;
+    padding: 10px;
+}
+
+.nav ol{
+    display: flex;
+}
+
+.nav li+li:before{
+    padding: 8px;
+    color: black;
+    content: "/";
+    font-weight: bold;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+} 
+
+ul li a:hover{
+    text-decoration:underline;
+}
+
+.nav a:hover{
+    text-decoration:underline;
+}
+
+section  {
+    margin: 10px;
+    padding-top: 10px;
+}
+
+footer ul {
+    display: inline;
+}
+
+footer ul li h4 {
+    width: 100%;
+    height: 150px;
+    padding: 5px;
+    padding-top: 50%;
+    font-size: 15px;
+    font-size: large;
+}
+
+footer ul li h2 {
+    padding: 5px;
+    font-size: large;
+}
+
+footer span {
+    color: gray;
+    font-weight: bold;
+}
+
+footer ul li p{
+    font-size: large;
+    font-weight: bold;
+}
+
+footer p span {
+    color: green;
+    font-size: large;
+}
+
+footer p a {
+    color: black;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+}
+
+footer ul li  {
+    display: inline-block;
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 5px;
+}
+footer ul li h4 {
+    background-color: #8cbfea;
+    text-align: center;
+    padding-bottom: 50%;
+}
+
 @media only screen and (max-width: 430px) {
     header {
         padding: 10px;
@@ -15,16 +144,8 @@
         font-family:'Courier New', Courier, monospace;
         text-decoration: none;
         font-weight: bold;
-        display: inline;
-    }
-
-    .logo{
         display: block;
         text-align: center;
-    }
-
-    header ul li{
-        display: inline-block;
     }
     
     header ul li a {
@@ -32,12 +153,10 @@
         color: black;
         font-size: 20px;
         font-weight: bold;
-        /* border: 1px solid black; */
     }
     
     ul {
         margin-top: 10px;
-        border: 1px solid black;
     }
     
     ul,ol {
@@ -148,30 +267,26 @@
         font-family:'Courier New', Courier, monospace;
         text-decoration: none;
         font-weight: bold;
-        display: inline;
-    }
-
-    .logo{
         display: block;
+        height: max-content;
+        width: 100%;
         text-align: center;
     }
 
-    header ul li{
-        display: inline-block;
+    header {
+        display: block;
+    }
+
+    header li{ 
+        border: 1px solid black;
+        border-bottom: 2px solid black;
     }
     
     header ul li a {
         text-decoration: none;
         color: black;
-        font-size: 20px;
+        font-size: 15px;
         font-weight: bold;
-        /* border: 1px solid black; */
-        padding: 40px;
-    }
-    
-    ul {
-        margin-top: 10px;
-        border: 1px solid black;
     }
     
     ul,ol {
@@ -188,7 +303,6 @@
     }
     
     .nav li+li:before{
-        padding: 8px;
         color: black;
         content: ">";
         font-weight: bold;
@@ -199,7 +313,12 @@
         color: black;
         font-size: 15px;
         font-weight: bold;
-    } 
+    }
+
+    .nav li:first-child a, .nav li:nth-child(2) a{
+        color: blue;
+        text-decoration: underline;
+    }
     
     ul li a:hover{
         text-decoration:underline;
