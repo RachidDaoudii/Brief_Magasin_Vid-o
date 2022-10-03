@@ -392,3 +392,9 @@ footer ul li h4 {
         padding-bottom: 50%;
     }
   }
+
+  @media print and(max-width: 1024px){
+    header ul{
+        display: none;
+    }
+ }
