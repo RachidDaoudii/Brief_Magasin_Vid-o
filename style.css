@@ -202,7 +202,6 @@ footer ul li h4 {
     footer ul li  {
         display: inline-block;
         padding: 10px;
-        box-sizing: border-box;
         border: 2px solid gray;
         margin: 5px;
     }
@@ -247,13 +246,11 @@ footer ul li h4 {
     footer ul li  {
         display: block;
         padding: 10px;
-        box-sizing: border-box;
         border: 2px solid gray;
         margin: 5px;
     }
     footer ul li h4 {
         background-color: #8cbfea;
-        box-sizing: border-box;
         text-align: center;
         padding-bottom: 50%;
     }
@@ -336,7 +333,6 @@ footer ul li h4 {
     footer ul li  {
         display: inline-block;
         padding: 10px;
-        box-sizing: border-box;
         border: 2px solid gray;
         margin: 5px;
     }
@@ -381,13 +377,11 @@ footer ul li h4 {
     footer ul li  {
         display: block;
         padding: 10px;
-        box-sizing: border-box;
         border: 2px solid gray;
         margin: 5px;
     }
     footer ul li h4 {
         background-color: #8cbfea;
-        box-sizing: border-box;
         text-align: center;
         padding-bottom: 50%;
     }
